@@ -26,7 +26,6 @@ public class Nominee {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int id;
 
-	@Column(name = "nominee_name")
 	private String name;
 	
 	@ManyToOne
