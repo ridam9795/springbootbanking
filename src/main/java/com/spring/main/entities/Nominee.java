@@ -28,9 +28,6 @@ public class Nominee {
 
 	private String name;
 	
-	@ManyToOne
-	@JoinColumn(name="customer_nominees")
-	private Customer customer;
 
 	public int getId() {
 		return id;
@@ -48,24 +45,16 @@ public class Nominee {
 		this.name = name;
 	}
 
-	public Customer getCustomer() {
-		return customer;
-	}
-
-	public void setCustomer(Customer customer) {
-		this.customer = customer;
-	}
 
 	public Nominee() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
-	public Nominee(int id, String name, Customer customer) {
+	public Nominee(int id, String name) {
 		super();
 		this.id = id;
 		this.name = name;
-		this.customer = customer;
 	}
 
 
